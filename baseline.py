@@ -10,9 +10,9 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-train=pd.read_csv('../first_round_training_data.csv')
-test=pd.read_csv('../first_round_testing_data.csv')
-submit=pd.read_csv('../submit_example.csv')
+train=pd.read_csv('../data/first_round_training_data.csv')
+test=pd.read_csv('../data/first_round_testing_data.csv')
+submit=pd.read_csv('../data/submit_example.csv')
 dit={'Excellent':0,'Good':1,'Pass':2,'Fail':3}
 train['label']=train['Quality_label'].map(dit)
 
